@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Text View for Displaying SIGN IN Text At Top of UI-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="50dp"
+        android:text="BEAUTIFY"
+        android:id="@+id/beautify"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!--Text View for Displaying Text-->
+
+    <TextView
+        android:id="@+id/Text"
+        android:layout_below="@+id/beautify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="110dp"
+        android:text="Text:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+
+    <!--Edit Text for Filling Username-->
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="fill_parent"
+        android:singleLine="true"
+        android:layout_below="@+id/beautify"
+        android:layout_height="40dp"
+        android:layout_marginTop="110dp"
+        android:layout_toRightOf="@+id/Text"
+        android:textColorHint="@color/grey"
+        android:hint="Text to Beautify" />
+
+
+    <!--Button for Clicking after filling details-->
+
+    <Button
+        android:id="@+id/changeFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#03B424"
+        android:text="Font"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/changeSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeFont"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#03B424"
+        android:text="Size"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/changeStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeSize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#03B424"
+        android:text="Style"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
